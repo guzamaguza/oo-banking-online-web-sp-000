@@ -1,6 +1,6 @@
 class BankAccount
-  attr_accessor :name
-  attr_reader :status, :balance
+  attr_accessor :status, :balance 
+  attr_reader :name #should only be allowed to read not write 
 
   def initialize(name)
     @name = name.freeze
