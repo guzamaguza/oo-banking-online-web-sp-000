@@ -1,5 +1,5 @@
-
-#class Transfer
+=begin
+class Transfer
   attr_accessor :sender, :receiver, :amount, :status
 
   def initialize(sender, receiver, amount)
@@ -35,7 +35,7 @@
   end
 
 end
-
+=end
 
 require 'pry'
 class Transfer
