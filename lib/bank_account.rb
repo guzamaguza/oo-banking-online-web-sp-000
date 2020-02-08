@@ -3,7 +3,7 @@ class BankAccount
   attr_reader :name #should only be allowed to read not write
 
   def initialize(name)
-    @name = name.freeze
+    @name = name
     @status = "open"
     @balance = 1000
   end
