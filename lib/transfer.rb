@@ -16,9 +16,11 @@ class Transfer
 
   def execute_transaction
     binding
-        if @sender.balance < @amount || @status != "pending"
+        if @sender.balance < @amount 
           @status = "rejected"
           return "Transaction rejected. Please check your account balance."
+        elseif @status == "complete"
+          return "Transaction was already excuted"
         else
           @sender.balance -= @amount
           @receiver.balance += @amount
@@ -33,7 +35,6 @@ class Transfer
       @status = "reversed"
     end
   end
-
 end
 
 =begin
