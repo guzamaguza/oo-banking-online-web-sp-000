@@ -1,10 +1,10 @@
 class Transfer
   # your code here
-  def initialize(sender, receiver)
+  def initialize(sender, receiver, amount)
     @sender = sender
     @receiver = receiver
     @status = "pending"
-    @amount = 50
+    @amount = amount
   end
 
   def valid?
