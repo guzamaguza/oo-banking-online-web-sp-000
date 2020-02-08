@@ -4,7 +4,6 @@ class BankAccount
 
   def initialize(name)
     @name = name.freeze
-    #@name.freeze
     @status = "open"
     @balance = 1000
   end
